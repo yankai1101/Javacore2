@@ -14,7 +14,7 @@ import java.util.Optional;
  **/
 public class OptionalTest {
     public static void main(String[] args) throws IOException {
-        String pathName = CountLongWords.class.getResource("/alice30.txt").getPath();
+        String pathName = OptionalTest.class.getResource("/alice30.txt").getPath();
 
         String contents = new String(Files.readAllBytes(Paths.get(pathName)), StandardCharsets.UTF_8);
         List<String> wordList = List.of(contents.split("\\PL+"));

@@ -19,7 +19,7 @@ import java.util.stream.StreamSupport;
 public class CreatingStreams {
     public static void main(String[] args) throws IOException {
         // 文件路径
-        String pathName = CountLongWords.class.getResource("/alice30.txt").getPath();
+        String pathName = CreatingStreams.class.getResource("/alice30.txt").getPath();
 
         String contents = new String(Files.readAllBytes(Paths.get(pathName)), StandardCharsets.UTF_8);
         Stream<String> words = Stream.of(contents.split("\\PL+"));// \\PL+指的是非字母分隔符
