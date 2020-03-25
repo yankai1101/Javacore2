@@ -1,3 +1,5 @@
+package vip.abatt.unit01;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
